@@ -1,0 +1,12 @@
+create venv:
+py -3.10 -m venv myenv
+
+
+pip install --upgrade pip setuptools wheel
+
+pip install -r requirements.txt
+
+CUDA:
+
+pip uninstall onnxruntime onnxruntime-gpu
+pip install onnxruntime-gpu==1.16.3
